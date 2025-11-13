@@ -13358,9 +13358,9 @@ header.main-header.header-prime .navbar{
 
 #mute-btn {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #000;
+    bottom: 64px;
+    left: 40px;
+    background: #cbca7b;
     color: #fff;
     border: none;
     padding: 10px 16px;
