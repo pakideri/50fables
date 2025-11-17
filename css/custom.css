@@ -6602,9 +6602,9 @@ header.main-header .header-sticky.active{
         padding: 50px 0;
     }
 
-	.contact-info-item{
+	/* .contact-info-item{
         width: calc(50% - 15px);
-    }
+    } */
 
     .contact-info-item .icon-box{
         margin-bottom: 20px;
