@@ -511,7 +511,8 @@
                 <div class="col-lg-12">
                     <!-- Footer Copyright Text Start -->
                     <div class="footer-copyright-text">
-                        <p>Copyright © 2025 All Rights Reserved.</p>
+                        <p>Copyright © <span id="copyright-year">2025</span> All Rights Reserved.</p>
+                        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
                     </div>
                     <!-- Footer Copyright Text End -->
                 </div>

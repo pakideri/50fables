@@ -13383,20 +13383,40 @@ header.main-header.header-prime .navbar{
 
 
 
-	.whatsapp {
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
-  z-index:100;
+.floating-contact-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
 }
 
-.whatsapp-icon {
-  margin-top:13px;
+.floating-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    color: #FFF;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+}
+
+.call-btn {
+    background-color: #cbca7b;
 }
