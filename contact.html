@@ -455,7 +455,7 @@
             var lname   = document.getElementById('lname').value.trim();
             var phone   = document.getElementById('phone').value.trim();
             var email   = document.getElementById('email').value.trim();
-            var checkinVal = d ment.getElementById('checkin').value.trim();
+            var checkinVal = document.getElementById('checkin').value.trim();
             var checkoutVal = document.getElementById('checkout').value.trim();
             var message = document.getElementById('message').value.trim();
 
@@ -467,10 +467,11 @@
             var checkinDate = new Date(checkinVal);
             var checkoutDate = new Date(checkoutVal);
             
-            var timeDiff = checkoutDate.getTime() - checkinDate.getTi      var dayDiff = Math.round(timeDiff / (1000 * 3600 * 24));
+            var timeDiff = checkoutDate.getTime() - checkinDate.getTime();
+            var dayDiff = Math.round(timeDiff / (1000 * 3600 * 24));
             
             if (dayDiff <= 0) {
-                alert('Check-out dateer check-in date.');
+                alert('Check-out date must be after check-in date.');
                 return;
             }
 
