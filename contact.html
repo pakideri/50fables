@@ -455,22 +455,39 @@
             var lname   = document.getElementById('lname').value.trim();
             var phone   = document.getElementById('phone').value.trim();
             var email   = document.getElementById('email').value.trim();
-            var checkin = document.getElementById('checkin').value.trim();
-            var checkout= document.getElementById('checkout').value.trim();
+            var checkinVal = d ment.getElementById('checkin').value.trim();
+            var checkoutVal = document.getElementById('checkout').value.trim();
             var message = document.getElementById('message').value.trim();
 
-            if (!fname || !lname || !phone || !email || !checkin || !checkout) {
+            if (!fname || !lname || !phone || !email || !checkinVal || !checkoutVal) {
                 alert('Please fill in all required fields.');
                 return;
             }
+
+            var checkinDate = new Date(checkinVal);
+            var checkoutDate = new Date(checkoutVal);
+            
+            var timeDiff = checkoutDate.getTime() - checkinDate.getTi      var dayDiff = Math.round(timeDiff / (1000 * 3600 * 24));
+            
+            if (dayDiff <= 0) {
+                alert('Check-out dateer check-in date.');
+                return;
+            }
+
+            var cInParts = checkinVal.split('-');
+            var formattedCheckin = cInParts[2] + '/' + cInParts[1] + '/' + cInParts[0];
+
+            var cOutParts = checkoutVal.split('-');
+            var formattedCheckout = cOutParts[2] + '/' + cOutParts[1] + '/' + cOutParts[0];
 
             var text =
                 '🏕️ *New Enquiry – 50 Fables*\n\n' +
                 '👤 *Name:* ' + fname + ' ' + lname + '\n' +
                 '📞 *Phone:* ' + phone + '\n' +
                 '📧 *Email:* ' + email + '\n' +
-                '📅 *Check-in:* ' + checkin + '\n' +
-                '📅 *Check-out:* ' + checkout + '\n' +
+                '📅 *Check-in:* ' + formattedCheckin + '\n' +
+                '📅 *Check-out:* ' + formattedCheckout + '\n' +
+                '🌙 *Duration:* ' + dayDiff + ' Night' + (dayDiff !== 1 ? 's' : '') + '\n' +
                 (message ? '💬 *Message:* ' + message : '');
 
             var encodedText = encodeURIComponent(text);
