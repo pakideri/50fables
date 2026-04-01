@@ -220,6 +220,18 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
 
+                                <div class="form-group col-md-6 mb-4">
+                                    <label for="checkin" style="font-size: 14px; color: #555;">Check-in Date</label>
+                                    <input type="date" name="checkin" class="form-control" id="checkin" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <label for="checkout" style="font-size: 14px; color: #555;">Check-out Date</label>
+                                    <input type="date" name="checkout" class="form-control" id="checkout" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
                                 <div class="form-group col-md-12 mb-5">
                                     <textarea name="message" class="form-control" id="message" rows="4"
                                         placeholder="Send Message"></textarea>
@@ -443,9 +455,11 @@
             var lname   = document.getElementById('lname').value.trim();
             var phone   = document.getElementById('phone').value.trim();
             var email   = document.getElementById('email').value.trim();
+            var checkin = document.getElementById('checkin').value.trim();
+            var checkout= document.getElementById('checkout').value.trim();
             var message = document.getElementById('message').value.trim();
 
-            if (!fname || !lname || !phone || !email) {
+            if (!fname || !lname || !phone || !email || !checkin || !checkout) {
                 alert('Please fill in all required fields.');
                 return;
             }
@@ -455,6 +469,8 @@
                 '👤 *Name:* ' + fname + ' ' + lname + '\n' +
                 '📞 *Phone:* ' + phone + '\n' +
                 '📧 *Email:* ' + email + '\n' +
+                '📅 *Check-in:* ' + checkin + '\n' +
+                '📅 *Check-out:* ' + checkout + '\n' +
                 (message ? '💬 *Message:* ' + message : '');
 
             var encodedText = encodeURIComponent(text);
