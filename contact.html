@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+    <a href="https://wa.me/919633889771?text=Hello%2C%20I%20would%20like%20to%20make%20an%20enquiry%20about%2050%20Fables." class="whatsapp"
         target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <!-- Preloader End -->
 
@@ -193,8 +193,8 @@
                         <!-- Section Title End -->
 
                         <!-- Contact Form Start -->
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
-                            data-wow-delay="0.2s">
+                        <form id="contactForm" action="#" method="POST" class="wow fadeInUp"
+                            data-wow-delay="0.2s" onsubmit="sendToWhatsApp(event)">
                             <div class="row">
                                 <div class="form-group col-md-6 mb-4">
                                     <input type="text" name="fname" class="form-control" id="fname"
@@ -435,9 +435,42 @@
             });
         });
 
+        // Send contact form inquiry to WhatsApp
+        function sendToWhatsApp(e) {
+            e.preventDefault();
 
+            var fname   = document.getElementById('fname').value.trim();
+            var lname   = document.getElementById('lname').value.trim();
+            var phone   = document.getElementById('phone').value.trim();
+            var email   = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
 
+            if (!fname || !lname || !phone || !email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
 
+            var text =
+                '🏕️ *New Enquiry – 50 Fables*\n\n' +
+                '👤 *Name:* ' + fname + ' ' + lname + '\n' +
+                '📞 *Phone:* ' + phone + '\n' +
+                '📧 *Email:* ' + email + '\n' +
+                (message ? '💬 *Message:* ' + message : '');
+
+            var encodedText = encodeURIComponent(text);
+            window.open('https://wa.me/919633889771?text=' + encodedText, '_blank');
+
+            // Reset form after opening WhatsApp
+            document.getElementById('contactForm').reset();
+
+            var msgSubmit = document.getElementById('msgSubmit');
+            msgSubmit.classList.remove('hidden');
+            msgSubmit.innerHTML = '✅ Your enquiry has been sent via WhatsApp!';
+            msgSubmit.style.color = '#25d366';
+            msgSubmit.style.fontSize = '14px';
+            msgSubmit.style.marginTop = '10px';
+            setTimeout(function () { msgSubmit.classList.add('hidden'); }, 5000);
+        }
 
     </script>
 </body>
