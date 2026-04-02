@@ -5896,7 +5896,6 @@ header.main-header .header-sticky.active{
         display: block;
         text-align: center;
     }
-    }
 	
 	.section-row{
 		margin-bottom: 40px;
@@ -6631,32 +6630,39 @@ header.main-header .header-sticky.active{
 		margin-bottom: 20px;
 	}
 
-	.error-page-image img{
-		max-width: 80%;
-	}
+    .error-page-image img {
+        max-width: 80%;
+    }
+    
+    .wow {
+        visibility: visible !important;
+        animation-name: none !important;
+    }
 }
 
-@media only screen and (max-width: 767px){
-
-	.topbar-contact-info ul{
-		justify-content: center;
-	}
-
-	.topbar-social-links{
-		display: none;
-	}
-
-	.section-row{
-		margin-bottom: 30px;
-	}
-
-	.section-title h1{
-		font-size: 28px;
-	}
-
-	.section-title h2{
-		font-size: 26px;
-	}
+@media only screen and (max-width: 767px) {
+    .topbar-contact-info ul {
+        justify-content: center;
+    }
+    .topbar-social-links {
+        display: none;
+    }
+    .section-row {
+        margin-bottom: 30px;
+    }
+    .section-title h1 {
+        font-size: 28px;
+    }
+    .section-title h2 {
+        font-size: 26px;
+    }
+    section, .page-header, .page-gallery, .page-contact-us, .about-section-royal, .service-section-royal {
+        padding: 40px 0 !important;
+        min-height: auto !important;
+    }
+    .main-footer {
+        padding-top: 40px !important;
+    }
 
 	.hero-benefit-item-list{
 		margin-top: 30px;
@@ -13419,4 +13425,32 @@ header.main-header.header-prime .navbar{
 
 .call-btn {
     background-color: #cbca7b;
+}
+
+/* Floating Buttons Mobile Adjustments */
+@media (max-width: 768px) {
+    .floating-contact-buttons {
+        bottom: 20px !important;
+        right: 20px !important;
+        top: auto !important;
+        left: auto !important;
+        gap: 10px;
+    }
+    .floating-btn {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+    }
+}
+
+/* Gallery Grid Mobile Fix */
+@media (max-width: 575px) {
+    .photo-gallery {
+        margin-bottom: 20px;
+    }
+    .page-gallery-box .col-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
