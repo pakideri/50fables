@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Engaging family and group activities at 50 Fables Wayanad.">
+    <meta name="keywords" content="Family Activities, Group Travel, Wayanad Resort, Games, Bonding">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Family & Group Activities | 50 FABLES</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    <style>
+        :root {
+            --primary-color: #cbca7b;
+            --secondary-color: #1a1a1a;
+            --text-light: #f4f4f4;
+            --accent-color: #9d9c5a;
+        }
+
+        .service-single-hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: var(--secondary-color);
+        }
+
+        .service-single-hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            transform: scale(1.1);
+            animation: zoom-fade 20s infinite alternate;
+        }
+
+        @keyframes zoom-fade {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        .hero-title-box {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .hero-title-box h1 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+        }
+
+        .service-details-section {
+            background: #fff;
+            padding: 100px 0;
+            position: relative;
+            margin-top: -100px;
+            z-index: 5;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .details-card {
+            background: #fff;
+            border-radius: 25px;
+            padding: 55px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .activity-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .activity-feature-item {
+            padding: 25px;
+            background: #fdfdfd;
+            border-bottom: 3px solid var(--primary-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .activity-feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .activity-feature-item i {
+            display: block;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .service-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .booking-widget {
+            background: var(--secondary-color);
+            color: white;
+            padding: 45px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .booking-widget h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        .btn-booking {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 55px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-booking:hover {
+            background: white;
+            color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-box h1 { font-size: 2.8rem; }
+            .service-single-hero { height: 60vh; }
+            .activity-feature-list { grid-template-columns: 1fr; }
+            .details-card { padding: 35px 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header header-royal">
+        <div class="header-sticky bg-section-royal">
+            <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="wayanad.html">Wayanad</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-btn">
+                            <a class="btn-default-royal btn-highlighted-royal" href="contact.html">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Service Hero Start -->
+    <div class="service-single-hero">
+        <img src="images/service-image-royal-3.jpg" alt="Family & Group Activities Hero">
+        <div class="hero-title-box">
+            <h1 class="wow fadeInUp">Family & Group Activities</h1>
+        </div>
+    </div>
+    <!-- Service Hero End -->
+
+    <!-- Service Details Content Start -->
+    <section class="service-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="details-card wow fadeInLeft">
+                        <h2 class="mb-4">Create Timeless Memories Together</h2>
+                        <p class="lead mb-4">Reconnect with your loved ones in a sanctuary designed for togetherness. At 50 Fables, we offer experiences that transcend generations, ensuring that both the young and the young at heart find joy in every moment.</p>
+                        
+                        <p>Our group and family programs are built on the principles of fun, shared discovery, and the simple beauty of communal life. Whether you're planning a massive family reunion or a close-knit getaway with friends, our custom activities are designed to spark conversation and create laughter.</p>
+
+                        <div class="activity-feature-list">
+                            <div class="activity-feature-item">
+                                <i class="fa fa-users"></i>
+                                <h4>Traditional Games</h4>
+                                <p>Revisit your roots with traditional local games like Pallanguzhi, or enjoy modern outdoor board games on our manicured lawns.</p>
+                            </div>
+                            <div class="activity-feature-item">
+                                <i class="fa fa-utensils"></i>
+                                <h4>Group Dining</h4>
+                                <p>Enjoy massive feasts featuring authentic Wayanad cuisine, served under the sprawling canopy of our ancient trees.</p>
+                            </div>
+                            <div class="activity-feature-item">
+                                <i class="fa fa-hiking"></i>
+                                <h4>Plantation Walks</h4>
+                                <p>Easy-paced walks through our spice gardens, perfect for elders and young children alike to learn about nature.</p>
+                            </div>
+                            <div class="activity-feature-item">
+                                <i class="fa fa-music"></i>
+                                <h4>Cultural Evenings</h4>
+                                <p>Experience local music, dance, and storytelling sessions around a central fire—a hit for groups of all sizes.</p>
+                            </div>
+                        </div>
+
+                        <p>Our resort also provides dedicated areas for group activities, including open-air pavilions and bonfire pits designed to accommodate large groups while maintaining an intimate feel. We believe that the best stories are written together, and 50 fables is where your next chapter begins.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="service-sidebar wow fadeInRight">
+                        <div class="booking-widget mb-4">
+                            <h3>Special Group Rates</h3>
+                            <p>Planning a large gathering? Contact us for customized group packages and exclusive discounts.</p>
+                            <a href="contact.html" class="btn-booking">Get Group Quote</a>
+                        </div>
+
+                        <div class="details-card p-4">
+                            <h4>Why Groups Choose Us?</h4>
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li class="mb-2"><i class="fa fa-star text-warning me-2"></i> Private Bonfire Zones</li>
+                                <li class="mb-2"><i class="fa fa-star text-warning me-2"></i> Custom Menu Planning</li>
+                                <li class="mb-2"><i class="fa fa-star text-warning me-2"></i> Exclusive Usage Rights</li>
+                                <li><i class="fa fa-star text-warning me-2"></i> 24/7 Group Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Details Content End -->
+
+    <!-- Other Services Start -->
+    <section class="other-services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Discover More</h3>
+                        <h2>Related Experiences</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="other-service-card">
+                        <img src="images/service-image-royal-4.jpg" alt="Natural Pools">
+                        <div class="other-service-body">
+                            <h4>Natural Pools</h4>
+                            <p>Refresh yourself in our eco-friendly natural stone pools—a family favorite.</p>
+                            <a href="service-natural-pools.html" class="btn-default-royal btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright-text">
+                        <p>Copyright © <span id="copyright-year">2025</span> All Rights Reserved.</p>
+                        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

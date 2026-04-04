@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Trek the iconic Chembra Peak in Wayanad. Heart-shaped lake guide by 50 Fables.">
+    <title>Chembra Peak | 50 FABLES Discovery Guide</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <style>
+        :root { --primary-color: #cbca7b; --secondary-color: #1a1a1a; --accent-color: #9d9c5a; }
+        .discover-hero { position: relative; height: 65vh; display: flex; align-items: center; justify-content: center; background-color: var(--secondary-color); overflow: hidden; }
+        .discover-hero img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4); transform: scale(1.05); animation: zoom-effect 20s infinite alternate; }
+        @keyframes zoom-effect { from { transform: scale(1); } to { transform: scale(1.15); } }
+        .hero-content-box { position: relative; z-index: 5; text-align: center; color: #fff; }
+        .hero-content-box h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 10px; text-shadow: 2px 2px 20px rgba(0,0,0,0.4); }
+        .breadcrumb-custom { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; font-weight: 700; color: var(--primary-color); margin-bottom: 20px; }
+        .discover-details { padding: 120px 0; background: #fdfdf8; position: relative; margin-top: -120px; z-index: 10; border-radius: 60px 60px 0 0; }
+        .info-card { background: #fff; padding: 60px; border-radius: 40px; box-shadow: 0 10px 60px rgba(0,0,0,0.04); margin-bottom: 40px; }
+        .discover-meta { display: flex; gap: 40px; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid #f0f0f0; }
+        .meta-item { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--secondary-color); font-size: 1.1rem; }
+        .meta-item i { font-size: 1.4rem; color: var(--primary-color); }
+        .travel-content h2 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; margin-bottom: 30px; color: var(--secondary-color); font-size: 2.2rem; }
+        .travel-content p { font-size: 1.15rem; line-height: 1.9; color: #444; margin-bottom: 35px; }
+        .highlight-box { background: #f9f9f0; padding: 40px; border-radius: 25px; border-left: 6px solid var(--primary-color); margin: 50px 0; font-style: italic; color: #555; }
+        .sidebar-widget { background: #fff; padding: 40px; border-radius: 35px; box-shadow: 0 10px 40px rgba(0,0,0,0.03); margin-bottom: 40px; }
+        .sidebar-widget h4 { margin-bottom: 25px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary-color); border-bottom: 3px solid var(--primary-color); display: inline-block; padding-bottom: 5px; }
+        .transport-btn { display: block; background: var(--secondary-color); color: white; text-align: center; padding: 18px; border-radius: 60px; text-decoration: none; font-weight: 800; margin-top: 25px; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .transport-btn:hover { background: var(--primary-color); color: var(--secondary-color); transform: scale(1.05); }
+        .scrolled { background-color: #cbca7b !important; }
+        @media (max-width: 768px) { .info-card { padding: 40px 25px; } .discover-hero { height: 55vh; } .discover-meta { flex-direction: column; gap: 20px; } }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header header-royal">
+        <div class="header-sticky bg-section-royal">
+            <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="wayanad.html">Wayanad</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="discover-hero">
+        <img src="images/service-image-5.jpg" alt="Chembra Peak">
+        <div class="hero-content-box">
+            <div class="breadcrumb-custom wow fadeInDown">Skyline Wayanad</div>
+            <h1 class="wow fadeInUp">Chembra Peak</h1>
+        </div>
+    </div>
+
+    <section class="discover-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="info-card wow fadeInLeft">
+                        <div class="discover-meta">
+                            <div class="meta-item"><i class="fa fa-map-marker-alt"></i> 14 km from Kalpetta</div>
+                            <div class="meta-item"><i class="fa fa-clock"></i> Recommended: 4-5 Hours</div>
+                        </div>
+
+                        <div class="travel-content">
+                            <h2>The Heart of the Valley</h2>
+                            <p>Chembra Peak is the highest point in Wayanad, standing tall at 2,100 meters above sea level. It is globally recognized for the heart-shaped crystal-clear lake, 'Hridaya Saras', located mid-way to the peak, which is believed to have never dried up.</p>
+                            
+                            <p>Trekking to Chembra is a moderately challenging but highly rewarding experience. As you ascend through the rolling misty grasslands and rugged terrain, the entire expanse of Wayanad opens up below you. On a clear day, the views can reach as far as the Kozhikode and Malappuram districts.</p>
+
+                            <div class="highlight-box">
+                                <strong>Travel Tip:</strong> Trekking permits are limited to 200 people per day. We strongly suggest arriving at the forest office at Meppadi by 7:00 AM to secure yours. Trekking up to the very peak is currently restricted due to conservation; the endpoint is usually the heart lake.
+                            </div>
+
+                            <h3>Trekker's Paradise</h3>
+                            <p>The trek involves a steady climb through beautiful tea gardens and mountain slopes. A forest-approved guide is mandatory and will be provided by the forest department at the base of the trek. The route is physically demanding but offers some of the most dramatic landscapes in all of Kerala.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="discovery-sidebar">
+                        <div class="sidebar-widget wow fadeInRight">
+                            <h4>Visitor Essentials</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-3"><strong>Timings:</strong> 7:00 AM - 12:00 PM (Permit issue start).</li>
+                                <li class="mb-3"><strong>Trekking Fee:</strong> Approx. ₹750 for a group of 10.</li>
+                                <li class="mb-3"><strong>Provisions:</strong> Wear sturdy trekking boots. Carry water.</li>
+                                <li><strong>Best Season:</strong> September to March.</li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget wow fadeInRight" data-wow-delay="0.2s">
+                            <h4>Trek Logistics</h4>
+                            <p>Early starts are non-negotiable for Chembra. We can arrange your early morning transport to Meppadi and even pack a trekking lunch for you.</p>
+                            <a href="contact.html" class="transport-btn">Inquire for Trek Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container text-center py-4">
+            <p class="mb-0">Copyright © <span id="copyright-year">2025</span> 50 FABLES. All Rights Reserved.</p>
+            <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $("nav").addClass("scrolled");
+            } else {
+                $("nav").removeClass("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
