@@ -1,0 +1,39 @@
+{
+    "orbital_priority": [
+        {
+            "id": "heritage-stay",
+            "title": "Heritage Forest Stay in Wayanad",
+            "url": "index.html",
+            "mass": 100,
+            "anchor": "Best Heritage Stay"
+        },
+        {
+            "id": "private-pool",
+            "title": "Private Pool Experience",
+            "url": "discover-private-pool.html",
+            "mass": 90,
+            "anchor": "Private Pool Stay"
+        },
+        {
+            "id": "outdoor-adventure",
+            "title": "Outdoor Adventures & Treks",
+            "url": "discover-outdoor-adventures.html",
+            "mass": 85,
+            "anchor": "Explore Adventures"
+        },
+        {
+            "id": "tholpetty-safari",
+            "title": "Tholpetty Wildlife Safari",
+            "url": "discover-tholpetty.html",
+            "mass": 70,
+            "anchor": "Wayanad Wildlife Safari"
+        },
+        {
+            "id": "thirunelli-temple",
+            "title": "Thirunelli Temple Guide",
+            "url": "discover-thirunelli.html",
+            "mass": 60,
+            "anchor": "Visit Thirunelli"
+        }
+    ]
+}
