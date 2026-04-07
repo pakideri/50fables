@@ -120,16 +120,17 @@
     }
 </style>
 <!-- Primary Meta Tags -->
-<title>50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
-<meta name="title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
-<meta name="description" content="Discover the ultimate heritage and nature escape at 50Fables. Experience authentic forest stays, sustainable architecture, and the tranquil beauty of Wayanad. Book your direct stay today.">
+<title data-cms-key="seo.title">50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
+<meta name="title" property="og:title" data-cms-attr="content:seo.title">
+<meta name="description" data-cms-attr="content:seo.description">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://50fables.com/">
-<meta property="og:title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
-<meta property="og:description" content="Experience authentic forest stays and sustainable heritage architecture at 50Fables.">
+<meta property="og:title" data-cms-attr="content:seo.title">
+<meta property="og:description" data-cms-attr="content:seo.description">
 <meta property="og:image" content="https://50fables.com/images/hero.jpg">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -233,7 +234,7 @@
         </div>
         <div class="contact-info-content">
             <h3>Phone Number</h3>
-            <p><a href="tel:+919446257408">+91 94462 57408</a></p>
+            <p><a href="tel:+919446257408" data-cms-key="contactInfo.phone" data-cms-attr="href:contactInfo.tel">+91 94462 57408</a></p>
     </div>
     </div>
 
@@ -244,8 +245,8 @@
         </div>
         <div class="contact-info-content">
             <h3>Web / Email Address</h3>
-        <p><a href="https://www.50fables.com" target="_blank" rel="noopener noreferrer">www.50fables.com</a></p>
-        <p><a href="mailto:Tomynupul@gmail.com">Tomynupul@gmail.com</a></p>
+        <p><a href="https://www.50fables.com" target="_blank" rel="noopener noreferrer" data-cms-key="contactInfo.url">www.50fables.com</a></p>
+        <p><a href="mailto:Tomynupul@gmail.com" data-cms-key="contactInfo.email" data-cms-attr="href:contactInfo.mailto">Tomynupul@gmail.com</a></p>
         </div>
         </div>
 
@@ -256,7 +257,7 @@
         </div>
         <div class="contact-info-content">
             <h3>Our Location</h3>
-        <p>50 Fables, Wayanad</p>
+        <p data-cms-key="contactInfo.address">50 Fables, Wayanad</p>
         </div>
         </div>
 
@@ -278,8 +279,8 @@
                     <div class="contact-form">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">Contact Us</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Let's plan your dream Stay -
+                            <h3 class="wow fadeInUp" data-cms-key="contactForm.subTitle">Contact Us</h3>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" data-cms-key="contactForm.title">Let's plan your dream Stay -
                                 contact
                                 our team today</h2>
                         </div>
@@ -349,7 +350,7 @@
                     <div class="google-map-iframe">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.8320597255015!2d76.19831767611998!3d11.776872688439408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5e30090f9a47d%3A0xa4583ef90d553743!2s50Fables!5e0!3m2!1sen!2sin!4v1775469317676!5m2!1sen!2sin"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-cms-attr="src:googleMapUrl"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
                 </div>
@@ -493,6 +494,7 @@
     <script src="https://use.fontawesome.com/a53893d9fd.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script src="js/cms-loader.js"></script>
     <script>
         $(window).on('load', function () {
             $(document).one('click', function () {

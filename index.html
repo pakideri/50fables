@@ -44,15 +44,15 @@
     </script>
     <!-- Page Title -->
     <!-- Primary Meta Tags -->
-<title>50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
-<meta name="title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
-<meta name="description" content="Discover the ultimate heritage and nature escape at 50Fables. Experience authentic forest stays, sustainable architecture, and the tranquil beauty of Wayanad. Book your direct stay today.">
+<title data-cms-key="seo.title">50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
+<meta name="title" property="og:title" data-cms-attr="content:seo.title">
+<meta name="description" data-cms-attr="content:seo.description">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://50fables.com/">
-<meta property="og:title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
-<meta property="og:description" content="Experience authentic forest stays and sustainable heritage architecture at 50Fables.">
+<meta property="og:title" data-cms-attr="content:seo.title">
+<meta property="og:description" data-cms-attr="content:seo.description">
 <meta property="og:image" content="https://50fables.com/images/hero.jpg">
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
@@ -79,6 +79,7 @@
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -171,17 +172,17 @@
                         <div class="hero-content-royal">
                             <!-- Section Title Start -->
                             <div class="section-title">
-                                <h3 class="wow fadeInUp">WELCOME TO 50 FABLES</h3>
-                                <h1 class="text-anime-style-3" data-cursor="-opaque">Where Every Stay Becomes a Story
+                                <h3 class="wow fadeInUp" data-cms-key="hero_eyebrow">WELCOME TO 50 FABLES</h3>
+                                <h1 class="text-anime-style-3" data-cursor="-opaque" data-cms-key="hero_heading">Where Every Stay Becomes a Story
                                 </h1>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Find true peace nestled in nature. Unwind
+                                <p class="wow fadeInUp" data-wow-delay="0.2s" data-cms-key="hero_subtext">Find true peace nestled in nature. Unwind
                                     in a beautiful sanctuary designed for quiet moments and rich memories.</p>
                             </div>
                             <!-- Section Title End -->
 
                             <!-- Hero Button Start -->
                             <div class="hero-btn-royal wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="contact.html" class="btn-default-royal btn-highlighted-royal">Book Your
+                                <a href="contact.html" class="btn-default-royal btn-highlighted-royal" data-cms-key="hero_cta_text" data-cms-attr="href:hero_cta_link">Book Your
                                     Stay</a>
                             </div>
                             <!-- Hero Button End -->
@@ -205,7 +206,7 @@
                                     </div>
                                     <div class="hero-contact-item-content-royal">
                                         <h3>Call us</h3>
-                                        <p><a href="tel:+919446257408">+91 94462 57408</a></p>
+                                        <p><a href="tel:+919446257408" data-cms-key="contact_phone" data-cms-attr="href:contact_tel">+91 94462 57408</a></p>
                                     </div>
                                 </div>
                                 <!-- Hero Contact Item End -->
@@ -217,7 +218,7 @@
                                     </div>
                                     <div class="hero-contact-item-content-royal">
                                         <h3>E-mail us</h3>
-                                        <p><a href="mailto:Tomynupul@gmail.com">Tomynupul@gmail.com</a></p>
+                                        <p><a href="mailto:Tomynupul@gmail.com" data-cms-key="contact_email" data-cms-attr="href:contact_mailto">Tomynupul@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <!-- Hero Contact Item End -->
@@ -229,7 +230,7 @@
                                     </div>
                                     <div class="hero-contact-item-content-royal">
                                         <h3>Web</h3>
-                                        <p>www.50fables.com</p>
+                                        <p data-cms-key="contact_website">www.50fables.com</p>
                                     </div>
                                 </div>
                                 <!-- Hero Contact Item End -->
@@ -256,7 +257,7 @@
                             <!-- About Image 1 Start -->
                             <div class="about-image-1-royal">
                                 <figure class="image-anime">
-                                    <img src="images/about-image-1-royal.jpg" alt="">
+                                    <img src="images/about-image-1-royal.jpg" alt="" data-cms-attr="src:about_image_1">
                                 </figure>
                             </div>
                             <!-- About Image 1 End -->
@@ -300,9 +301,9 @@
                     <div class="about-content-royal">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">Heritage Accommodation</h3>
-                            <h2 class="text-effect" data-cursor="-opaque">50 Fables Wayanad Heritage Home</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Welcome to our old, beautiful heritage home in
+                            <h3 class="wow fadeInUp" data-cms-key="about_eyebrow">Heritage Accommodation</h3>
+                            <h2 class="text-effect" data-cursor="-opaque" data-cms-key="about_heading">50 Fables Wayanad Heritage Home</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-cms-key="about_text" data-cms-html="true">Welcome to our old, beautiful heritage home in
                                 Wayanad. This quiet, charming place sits on a large, green property in
                                 the peaceful hills.<br>
 
@@ -1180,6 +1181,7 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script src="js/cms-loader.js"></script>
     <script src="https://use.fontawesome.com/a53893d9fd.js"></script>
     <script>
         $(window).on('load', function () {
@@ -1227,6 +1229,16 @@
 
 
 
+        // Netlify Identity login script
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
     </script>
 </body>
 

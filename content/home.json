@@ -1,0 +1,71 @@
+{
+  "hero_eyebrow": "WELCOME TO 50 FABLES",
+  "hero_heading": "Where Every Stay Becomes a Story",
+  "hero_subtext": "Find true peace nestled in nature. Unwind in a beautiful sanctuary designed for quiet moments and rich memories.",
+  "hero_cta_text": "Book Your Stay",
+  "hero_cta_link": "contact.html",
+  "contact_phone": "+91 94462 57408",
+  "contact_email": "Tomynupul@gmail.com",
+  "contact_website": "www.50fables.com",
+
+  "about_eyebrow": "Heritage Accommodation",
+  "about_heading": "50 Fables Wayanad Heritage Home",
+  "about_text": "Welcome to our old, beautiful heritage home in Wayanad. This quiet, charming place sits on a large, green property in the peaceful hills.\n\nIt's the perfect place to get away from city noise. You'll find yourself surrounded by lush nature and fresh air.\n\nOur rooms are old but full of charm. The original walls and wood tell stories of the past. Staying here is a simple, relaxing trip back in time.",
+  "about_image_1": "images/about-image-1-royal.jpg",
+  "about_image_2": "images/about-image-2-royal.png",
+  "about_features": [
+    "Personalized Journeys Made for You",
+    "Adventure Experiences for Every Explorer",
+    "Memorable Escapes That Last Forever"
+  ],
+  "about_testimonial": "\u201cStories from Our Happy Guests\u201d",
+
+  "services_eyebrow": "Our Services",
+  "services_heading": "50 Fables: Where your stay writes a new, unforgettable chapter",
+  "services": [
+    {
+      "title": "Estate Garden Tour",
+      "description": "Since your property looks like it has a lovely natural setting.",
+      "image": "images/service-image-royal-1.jpg",
+      "link": "service-single.html"
+    },
+    {
+      "title": "Outdoor Adventures",
+      "description": "Sleep under the stars with the comfort of Glamping home.",
+      "image": "images/service-image-royal-2.jpg",
+      "link": "discover-outdoor-adventures.html"
+    },
+    {
+      "title": "Family & Group Activities",
+      "description": "Sleep under the stars with the comfort of Glamping home.",
+      "image": "images/service-image-royal-3.jpg",
+      "link": "discover-family-group.html"
+    },
+    {
+      "title": "Natural Pools",
+      "description": "Sleep under the stars with the comfort of Glamping home.",
+      "image": "images/service-image-royal-4.jpg",
+      "link": "discover-private-pool.html"
+    }
+  ],
+
+  "adventure_eyebrow": "My Adventure",
+  "adventure_heading": "Find your adventure and escape the ordinary today",
+  "adventure_cta_text": "Start Your Journey",
+  "adventure_box1_heading": "Step Into Nature\u2019s Heart and Begin Writing Your Unique Story of Adventure & Discovery",
+  "adventure_box2_text": "Every adventure is more than just a trip - it\u2019s a story waiting to be written. My Adventure is all about creating unforgettable",
+  "adventure_box2_image": "images/adventure-image-1-royal.jpg",
+  "adventure_box3_text": "Travel responsibly without sacrificing comfort. Our eco-conscious glamping experiences",
+  "adventure_box3_image": "images/adventure-image-2-royal.jpg",
+
+  "stats": [
+    { "value": "550", "suffix": "+", "label": "Unique Stories" },
+    { "value": "10", "suffix": "/10", "label": "Comfort Rating" },
+    { "value": "24", "suffix": "/7", "label": "Guest Support" },
+    { "value": "5", "suffix": "*", "label": "Breakfast" },
+    { "value": "100", "suffix": "+", "label": "Outdoor Activities" }
+  ],
+
+  "discover_eyebrow": "Gods own Country",
+  "discover_heading": "Discover Wayanad"
+}

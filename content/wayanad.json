@@ -1,0 +1,61 @@
+{
+  "seo": {
+    "title": "Discover Wayanad | Activities & Local Attractions | 50Fables",
+    "description": "Explore the wonders of Wayanad from 50Fables. Visit Thirunelli Temple, Tholpetty Wildlife Sanctuary, and local waterfalls. Experience the best of Wayanad nature."
+  },
+  "title": "Discover Wayanad",
+  "attractions": [
+    {
+      "title": "Thirunelli Temple",
+      "description": "It is an ancient temple dedicated to Lord Maha Vishnu beside the Brahmagiri hills in Kerala.",
+      "image": "images/service-image-1.jpg",
+      "url": "discover-thirunelli.html"
+    },
+    {
+      "title": "Tholpetty",
+      "description": "Wayanad Wildlife Sanctuary is spread across 344 square kms with four ranges namely Sulthan Bathery, Muthanga, Kurichiat and Tholpetty.",
+      "image": "images/service-image-2.jpg",
+      "url": "discover-tholpetty.html"
+    },
+    {
+      "title": "Karlad Lake",
+      "description": "Karlad Lake is located in Thariode, which is around 16 km away from Kalpetta.",
+      "image": "images/service-image-3.jpg",
+      "url": "discover-karlad-lake.html"
+    },
+    {
+      "title": "Kanthampara Falls",
+      "description": "A beautiful waterfall situated about 22 km away from Kalpetta.",
+      "image": "images/service-image-4.jpg",
+      "url": "discover-kanthampara-falls.html"
+    },
+    {
+      "title": "Chembra Peak",
+      "description": "Hike up the rugged terrains of the Chembra Peak located 2,100 metres above sea level on the southern part of Wayanad.",
+      "image": "images/service-image-5.jpg",
+      "url": "discover-chembra-peak.html"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Wayanad's Enchanted Trails",
+      "description": "Explore lush trails through the ancient Western Ghats with experienced naturalists who'll share stories of local tribes and the region's rich flora and fauna.",
+      "image": "images/interactive-process-image-1.jpg"
+    },
+    {
+      "title": "Vast Spice Plantation Routes",
+      "description": "Hit adrenaline-pumping trails winding through rolling hills of coffee, cardamom, and pepper, offering thrilling descents and panoramic vistas",
+      "image": "images/interactive-process-image-2.jpg"
+    },
+    {
+      "title": "The Serene Kabini Backwaters",
+      "description": "Glide down scenic backwaters surrounded by wildlife and stunning natural views, offering a peaceful glimpse into rural life near the Kabini River.",
+      "image": "images/interactive-process-image-3.jpg"
+    },
+    {
+      "title": "Edakkal Cave History",
+      "description": "Lay back under a clear, open sky and explore the constellations, or discover the prehistoric rock art and ancient history within the famous Edakkal Caves.",
+      "image": "images/interactive-process-image-4.jpg"
+    }
+  ]
+}

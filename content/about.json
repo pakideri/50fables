@@ -1,0 +1,70 @@
+{
+  "seo": {
+    "title": "50Fables Wayanad | Best Heritage Forest Stay in Wayanad",
+    "description": "Discover the ultimate heritage and nature escape at 50Fables. Experience authentic forest stays, sustainable architecture, and the tranquil beauty of Wayanad. Book your direct stay today."
+  },
+  "aboutUs": {
+    "subTitle": "About Us",
+    "image": "images/about-image-1-royal.jpg",
+    "stats": {
+      "number": "50",
+      "text": "Over 500+ Satisfied Customers"
+    },
+    "title": "50 Fables - Your Vintage Wayanad Retreat",
+    "description": "<p>Welcome to 50 Fables, a unique heritage homestay nestled in the serene, mist-kissed hills of Wayanad.</p><p>At 50 Fables, we believe that travel is not just about visiting a place, but about experiencing a time and a feeling. Our homestay is a labor of love, an old, cherished family home that has been thoughtfully converted to share its vintage soul and traditional charm with you.</p><p>We set out on this journey to create a space where guests can truly disconnect from the modern rush and reconnect with the simple, enriching rhythms of nature and history.</p><p>Stepping into 50 Fables is like turning the page of an old storybook. Here, you won't find sterile, modern architecture, but the authentic, hand-crafted aesthetic of a bygone era. We have preserved the heritage elements of the house, ensuring you get a genuine, traditional stay experience.</p><p>Our greatest desire is for you to not only feel comfortable but to feel the very pulse of Wayanad—to breathe the fresh, unspoiled air, listen to the 'fables' whispered by the ancient trees, and taste the warmth of traditional Kerala hospitality.</p><p>Come and stay with us. Let the walls of this vintage home tell you their stories, and let your own nature-filled tale begin at 50 Fables.</p>"
+  },
+  "fablesSection": {
+    "subTitle": "The Fables of Our Villa",
+    "title": "Every Corner Tells a Tale",
+    "fables": [
+      {
+        "icon": "fa-book-open",
+        "title": "Fable I: The Old Verandah",
+        "description": "Our 90-year-old verandah has witnessed decades of monsoon rains and quiet mornings. It's the soul of the house where time truly slows down."
+      },
+      {
+        "icon": "fa-coffee",
+        "title": "Fable II: The Plantation Walk",
+        "description": "The winding paths through our 3.5-acre plantation tell stories of the generations who nurtured these coffee and spice plants."
+      },
+      {
+        "icon": "fa-water",
+        "title": "Fable III: The Antigravity Pool",
+        "description": "A modern fable where heritage meets weightless luxury. A place where the stress of the modern world simply floats away."
+      }
+    ]
+  },
+  "amenitiesSection": {
+    "subTitle": "Stay Amenities",
+    "title": "Comfort & Convenience: Room Amenities",
+    "description": "We have carefully curated the amenities in each room to ensure your stay at 50 Fables blends the charm of heritage living with the essential comforts of today.",
+    "amenities": [
+      {
+        "iconImage": "images/icon-why-choose-1.svg",
+        "title": "Air-conditioning",
+        "description": "For your comfort, especially during warmer afternoons."
+      },
+      {
+        "iconImage": "images/icon-why-choose-2.svg",
+        "title": "Private Balcony",
+        "description": "A dedicated space to step out, breathe the fresh Wayanad air, and enjoy views of the surrounding nature"
+      },
+      {
+        "iconImage": "images/icon-why-choose-3.svg",
+        "title": "Flat Screen TV",
+        "description": "For relaxation and entertainment during your downtime."
+      },
+      {
+        "iconImage": "images/icon-why-choose-4.svg",
+        "title": "Shower Hot/Cold water",
+        "description": "Reliable access to water at your preferred temperature."
+      }
+    ],
+    "footerList": [
+      "Eco-Friendly",
+      "Private Stays",
+      "Adventure Ready",
+      "Scenic Views"
+    ]
+  }
+}
