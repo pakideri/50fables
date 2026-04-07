@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <meta name="keywords" content="Wayanad, Resort, Service, Estate Tour, Adventure">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <!-- Primary Meta Tags -->
+<title>50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
+<meta name="title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
+<meta name="description" content="Discover the ultimate heritage and nature escape at 50Fables. Experience authentic forest stays, sustainable architecture, and the tranquil beauty of Wayanad. Book your direct stay today.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://50fables.com/">
+<meta property="og:title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
+<meta property="og:description" content="Experience authentic forest stays and sustainable heritage architecture at 50Fables.">
+<meta property="og:image" content="https://50fables.com/images/hero.jpg">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    <style>
+        :root {
+            --primary-color: #cbca7b;
+            --secondary-color: #1a1a1a;
+            --text-light: #f4f4f4;
+            --accent-color: #9d9c5a;
+        }
+
+        .service-single-hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: var(--secondary-color);
+        }
+
+        .service-single-hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            transform: scale(1.1);
+            animation: zoom-fade 20s infinite alternate;
+        }
+
+        @keyframes zoom-fade {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        .hero-title-box {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-title-box h1 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .service-details-section {
+            background: #fff;
+            padding: 100px 0;
+            position: relative;
+            margin-top: -80px;
+            z-index: 5;
+            border-radius: 40px 40px 0 0;
+        }
+
+        .details-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .service-info-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .service-info-list li {
+            padding: 15px 20px;
+            background: #fdfdfd;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 10px 10px 0;
+            font-size: 1.1rem;
+            color: #555;
+            transition: all 0.3s ease;
+        }
+
+        .service-info-list li:hover {
+            transform: translateX(10px);
+            background: #f8f8f0;
+        }
+
+        .service-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .booking-widget {
+            background: var(--secondary-color);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .booking-widget h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .btn-booking {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-booking:hover {
+            background: white;
+            color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .other-services {
+            padding: 80px 0;
+            background: #f9f9f9;
+        }
+
+        .other-service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .other-service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .other-service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .other-service-body {
+            padding: 20px;
+        }
+
+        .other-service-body h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-box h1 { font-size: 2.5rem; }
+            .service-single-hero { height: 50vh; }
+            .details-card { padding: 30px; }
+            .service-info-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header header-royal">
+        <div class="header-sticky bg-section-royal">
+            <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="wayanad.html">Wayanad</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Header Btn Start -->
+                        <div class="header-btn">
+                            <a class="btn-default-royal btn-highlighted-royal" href="contact.html">Book Now</a>
+                        </div>
+                        <!-- Header Btn End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Service Hero Start -->
+    <div class="service-single-hero">
+        <img src="images/service-image-royal-1.jpg" alt="Service Hero" id="service-hero-img">
+        <div class="hero-title-box">
+            <h1 class="wow fadeInUp" id="service-hero-title">Estate Garden Tour</h1>
+        </div>
+    </div>
+    <!-- Service Hero End -->
+
+    <!-- Service Details Content Start -->
+    <section class="service-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="details-card wow fadeInLeft">
+                        <h2 class="mb-4">Experience the Magic of Nature</h2>
+                        <p class="lead mb-4" id="service-description">Immerse yourself in the lush greenery of our estate gardens. A guided tour that takes you through the aromatic spice plantations, vibrant floral displays, and serene water bodies that make 50 Fables a paradise for nature lovers.</p>
+                        
+                        <p>Welcome to a journey of sensory delight. Our estate garden tour is more than just a walk; it's an educational and soulful experience. You'll learn about the unique flora of Wayanad, the traditional spice harvesting methods, and the sustainable practices we maintain at our resort.</p>
+
+                        <ul class="service-info-list" id="service-features">
+                            <li><i class="fa fa-check-circle me-2"></i> Expert Naturalist Guide</li>
+                            <li><i class="fa fa-check-circle me-2"></i> Spice Tasting Session</li>
+                            <li><i class="fa fa-check-circle me-2"></i> Rare Plant Sightings</li>
+                            <li><i class="fa fa-check-circle me-2"></i> Photography Opportunity</li>
+                            <li><i class="fa fa-check-circle me-2"></i> 2 Hours Guided Walk</li>
+                            <li><i class="fa fa-check-circle me-2"></i> Refreshments Included</li>
+                        </ul>
+
+                        <p>Whether you're a photography enthusiast or simply looking for some peace and quiet, our garden tour offers something for everyone. Capturing the early morning mist rolling over the coffee plants is a memory you'll cherish forever.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="service-sidebar wow fadeInRight">
+                        <div class="booking-widget mb-4">
+                            <h3>Pre-book This Service</h3>
+                            <p>Enhance your stay by booking this activity in advance.</p>
+                            <a href="contact.html" class="btn-booking">Enquire Now</a>
+                        </div>
+
+                        <div class="details-card p-4">
+                            <h4>Quick Contact</h4>
+                            <p class="mb-1"><i class="fa fa-phone me-2"></i> +91 94462 57408</p>
+                            <p><i class="fa fa-envelope me-2"></i> Tomynupul@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Details Content End -->
+
+    <!-- Other Services Start -->
+    <section class="other-services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>More Experiences</h3>
+                        <h2>You May Also Like</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="other-service-card">
+                        <img src="images/service-image-royal-2.jpg" alt="">
+                        <div class="other-service-body">
+                            <h4>Outdoor Adventures</h4>
+                            <p>Sleep under the stars with the comfort of Glamping home.</p>
+                            <a href="service-outdoor-adventures.html" class="btn-default-royal btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="other-service-card">
+                        <img src="images/service-image-royal-3.jpg" alt="">
+                        <div class="other-service-body">
+                            <h4>Family & Group Activities</h4>
+                            <p>Group bonding sessions with fun outdoor games.</p>
+                            <a href="#" class="btn-default-royal btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="other-service-card">
+                        <img src="images/service-image-royal-4.jpg" alt="">
+                        <div class="other-service-body">
+                            <h4>Natural Pools</h4>
+                            <p>Refresh yourself in our eco-friendly natural stone pools.</p>
+                            <a href="#" class="btn-default-royal btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Other Services End -->
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-footer-box">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="about-footer-content">
+                                <p>Where Every Stay Becomes a Story</p>
+                            </div>
+                            <div class="footer-social-links">
+                                <h3>Social Media:</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-links-box">
+                            <div class="footer-links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links">
+                                <h3>Travel</h3>
+                                <ul>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="wayanad.html">Wayanad</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="footer-copyright-text">
+                        <p>Copyright © <span id="copyright-year">2025</span> All Rights Reserved.</p>
+                        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+    
+    <script>
+        // Simple script to handle different service types via URL params if needed in future
+        // For now, it just shows the default template content.
+        $(document).ready(function() {
+            new WOW().init();
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <meta name="keywords" content="Natural Pools, Wayanad Resort, Eco-friendly, Stay, Relaxation">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <!-- Primary Meta Tags -->
+<title>50Fables Wayanad | Best Heritage Forest Stay in Wayanad</title>
+<meta name="title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
+<meta name="description" content="Discover the ultimate heritage and nature escape at 50Fables. Experience authentic forest stays, sustainable architecture, and the tranquil beauty of Wayanad. Book your direct stay today.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://50fables.com/">
+<meta property="og:title" content="50Fables Wayanad | Best Heritage Forest Stay in Wayanad">
+<meta property="og:description" content="Experience authentic forest stays and sustainable heritage architecture at 50Fables.">
+<meta property="og:image" content="https://50fables.com/images/hero.jpg">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    <style>
+        :root {
+            --primary-color: #cbca7b;
+            --secondary-color: #1a1a1a;
+            --text-light: #f4f4f4;
+            --accent-color: #9d9c5a;
+            --pool-blue: #e8f4f8;
+        }
+
+        .service-single-hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: var(--secondary-color);
+        }
+
+        .service-single-hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+            transform: scale(1.1);
+            animation: zoom-fade 20s infinite alternate;
+        }
+
+        @keyframes zoom-fade {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        .hero-title-box {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .hero-title-box h1 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+        }
+
+        .service-details-section {
+            background: #fff;
+            padding: 120px 0;
+            position: relative;
+            margin-top: -100px;
+            z-index: 5;
+            border-radius: 60px 60px 0 0;
+        }
+
+        .details-card {
+            background: #fff;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 15px 60px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .pool-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .pool-feature-box {
+            background: var(--pool-blue);
+            padding: 40px;
+            border-radius: 25px;
+            border: 1px solid rgba(203, 202, 123, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pool-feature-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            background: white;
+        }
+
+        .pool-feature-box i {
+            display: block;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+        }
+
+        .pool-feature-box h4 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+
+        .service-sidebar {
+            position: sticky;
+            top: 120px;
+        }
+
+        .booking-widget {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #222 100%);
+            color: white;
+            padding: 55px 45px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .booking-widget h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+
+        .btn-booking {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 50px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 800;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-booking:hover {
+            background: white;
+            color: var(--secondary-color);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 991px) {
+            .pool-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-box h1 { font-size: 3rem; }
+            .service-single-hero { height: 60vh; }
+            .details-card { padding: 40px 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header header-royal">
+        <div class="header-sticky bg-section-royal">
+            <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="wayanad.html">Wayanad</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-btn">
+                            <a class="btn-default-royal btn-highlighted-royal" href="contact.html">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Service Hero Start -->
+    <div class="service-single-hero">
+        <img src="images/service-image-royal-4.jpg" alt="Natural Pools Hero">
+        <div class="hero-title-box">
+            <h1 class="wow fadeInUp">Natural Pools</h1>
+        </div>
+    </div>
+    <!-- Service Hero End -->
+
+    <!-- Service Details Content Start -->
+    <section class="service-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="details-card wow fadeInUp">
+                        <h2 class="mb-4">Echoes of the Earth's Purest Waters</h2>
+                        <p class="lead mb-4">Step away from the artificial and dive into the primal. At 50 Fables, our natural stone pools are designed to feel like hidden mountain lagoons, filtered by nature and framed by the wild.</p>
+                        
+                        <p>Our pools are more than just water features; they are eco-systems of relaxation. Built with locally sourced granite and slate, these pools use organic filtration systems to ensure the water remains as pure as a mountain spring, without the harsh smell of chemicals.</p>
+
+                        <div class="pool-grid">
+                            <div class="pool-feature-box wow fadeIn" data-wow-delay="0.2s">
+                                <i class="fa fa-tint"></i>
+                                <h4>Organic Filtration</h4>
+                                <p>We use bio-filtering systems and natural mineral balances to keep the water crystal clear and skin-friendly.</p>
+                            </div>
+                            <div class="pool-feature-box wow fadeIn" data-wow-delay="0.3s">
+                                <i class="fa fa-leaf"></i>
+                                <h4>Stone-Clad Design</h4>
+                                <p>Rough-hewn natural stones provide a slip-resistant, cooling surface that blends seamlessly with the forest floor.</p>
+                            </div>
+                            <div class="pool-feature-box wow fadeIn" data-wow-delay="0.4s">
+                                <i class="fa fa-moon"></i>
+                                <h4>Moonlight Swim</h4>
+                                <p>Ambient, low-intensity lighting allows for a safe and magical swimming experience under the stars.</p>
+                            </div>
+                            <div class="pool-feature-box wow fadeIn" data-wow-delay="0.5s">
+                                <i class="fa fa-infinity"></i>
+                                <h4>Infinite Views</h4>
+                                <p>Positioned on the edge of the estate, our main pool offers uninterrupted views of the misty valleys beyond.</p>
+                            </div>
+                        </div>
+
+                        <p>Whether you're starting your morning with a refreshing dip or cooling off after a trek, our natural pools offer a sensory escape that grounds you. Feel the texture of the earth beneath your feet and hear the distant calls of forest birds as you float in total serenity.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="service-sidebar wow fadeInRight">
+                        <div class="booking-widget mb-4">
+                            <h3>Private Access</h3>
+                            <p>Our pools are exclusive to resort guests, ensuring a private and tranquil experience for you and your family.</p>
+                            <a href="contact.html" class="btn-booking">Enquire For Stay</a>
+                        </div>
+
+                        <div class="details-card p-4">
+                            <h4>Pool Amenities</h4>
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li class="mb-2"><i class="fa fa-square text-primary me-2"></i> Heated Towels</li>
+                                <li class="mb-2"><i class="fa fa-square text-primary me-2"></i> Natural Sunscreens</li>
+                                <li class="mb-2"><i class="fa fa-square text-primary me-2"></i> Poolside Refreshments</li>
+                                <li><i class="fa fa-square text-primary me-2"></i> Sun Loungers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Details Content End -->
+
+    <!-- Other Services Start -->
+    <section class="other-services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h3>Discover More</h3>
+                        <h2>Related Experiences</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="other-service-card text-center">
+                        <img src="images/service-image-royal-1.jpg" alt="Estate Tour">
+                        <div class="other-service-body">
+                            <h4>Estate Garden Tour</h4>
+                            <p>The perfect follow-up to a morning swim—explore our aromatic spice gardens.</p>
+                            <a href="service-single.html" class="btn-default-royal btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright-text">
+                        <p>Copyright © <span id="copyright-year">2025</span> All Rights Reserved.</p>
+                        <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
