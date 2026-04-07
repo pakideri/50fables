@@ -44,7 +44,7 @@
     <!-- Mouse Cursor Css File -->
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/custom.min.css" rel="stylesheet" media="screen">
 
     <style>
         :root {
@@ -199,7 +199,10 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="images/loader.png" alt=""></div>
+            <div id="loading-icon"><picture>
+  <source srcset="images/loader.webp" type="image/webp">
+  <img loading="lazy" src="images/loader.png" alt="">
+</picture></div>
         </div>
     </div>
     <!-- Preloader End -->
@@ -210,7 +213,10 @@
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                        <picture>
+  <source srcset="images/logo.webp" type="image/webp">
+  <img loading="lazy" class="logo-100px" src="images/logo.png" alt="Logo">
+</picture>
                     </a>
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
@@ -237,7 +243,10 @@
 
     <!-- Service Hero Start -->
     <div class="service-single-hero">
-        <img src="images/service-image-royal-3.jpg" alt="Family & Group Activities Hero">
+        <picture>
+  <source srcset="images/service-image-royal-3.webp" type="image/webp">
+  <img loading="lazy" src="images/service-image-royal-3.jpg" alt="Family & Group Activities Hero">
+</picture>
         <div class="hero-title-box">
             <h1 class="wow fadeInUp">Family & Group Activities</h1>
         </div>
@@ -320,7 +329,10 @@
             <div class="row text-center">
                 <div class="col-lg-4 col-md-6 mx-auto">
                     <div class="other-service-card">
-                        <img src="images/service-image-royal-4.jpg" alt="Natural Pools">
+                        <picture>
+  <source srcset="images/service-image-royal-4.webp" type="image/webp">
+  <img loading="lazy" src="images/service-image-royal-4.jpg" alt="Natural Pools">
+</picture>
                         <div class="other-service-body">
                             <h4>Natural Pools</h4>
                             <p>Refresh yourself in our eco-friendly natural stone pools—a family favorite.</p>
@@ -346,23 +358,23 @@
     </footer>
 
     <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/validator.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/SmoothScroll.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
-    <script src="js/SplitText.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/function.js"></script>
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/validator.min.js"></script>
+    <script defer src="js/jquery.slicknav.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery.waypoints.min.js"></script>
+    <script defer src="js/jquery.counterup.min.js"></script>
+    <script defer src="js/isotope.min.js"></script>
+    <script defer src="js/jquery.magnific-popup.min.js"></script>
+    <script defer src="js/SmoothScroll.js"></script>
+    <script defer src="js/parallaxie.js"></script>
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/magiccursor.min.js"></script>
+    <script defer src="js/SplitText.min.js"></script>
+    <script defer src="js/ScrollTrigger.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
+    <script defer src="js/function.min.js"></script>
     <script>
         $(document).ready(function() {
             new WOW().init();

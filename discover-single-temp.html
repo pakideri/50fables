@@ -43,7 +43,7 @@
     <!-- Mouse Cursor Css File -->
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom Css -->
-    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="css/custom.min.css" rel="stylesheet" media="screen">
 
     <style>
         :root {
@@ -217,7 +217,10 @@
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                        <picture>
+  <source srcset="images/logo.webp" type="image/webp">
+  <img loading="lazy" class="logo-100px" src="images/logo.png" alt="Logo">
+</picture>
                     </a>
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
@@ -237,7 +240,10 @@
     </header>
 
     <div class="discover-hero">
-        <img src="images/page-header-bg.jpg" alt="Discover Wayanad">
+        <picture>
+  <source srcset="images/page-header-bg.webp" type="image/webp">
+  <img loading="lazy" src="images/page-header-bg.jpg" alt="Discover Wayanad">
+</picture>
         <div class="hero-content-box">
             <div class="breadcrumb-custom">Discover Wayanad</div>
             <h1>Scenic Attraction</h1>
@@ -297,9 +303,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
     <script>
         new WOW().init();
         $(window).on("scroll", function () {

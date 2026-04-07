@@ -26,7 +26,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom.min.css" rel="stylesheet">
 
     <style>
         :root { --primary-color: #cbca7b; --secondary-color: #1a1a1a; --pool-blue: #e0f2f1; }
@@ -49,6 +49,8 @@
         .pool-gallery img { width: 100%; border-radius: 25px; height: 300px; object-fit: cover; }
         @media (max-width: 768px) { .pool-gallery { grid-template-columns: 1fr; } .pool-hero { height: 60vh; } }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -58,7 +60,10 @@
             <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img class="logo-100px" src="images/logo.png" alt="Logo">
+                        <picture>
+  <source srcset="images/logo.webp" type="image/webp">
+  <img loading="lazy" class="logo-100px" src="images/logo.png" alt="Logo">
+</picture>
                     </a>
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
@@ -78,7 +83,10 @@
     </header>
 
     <div class="pool-hero">
-        <img src="images/service-single-img.jpg" alt="50 Fables Private Pool">
+        <picture>
+  <source srcset="images/service-single-img.webp" type="image/webp">
+  <img loading="lazy" src="images/service-single-img.jpg" alt="50 Fables Private Pool">
+</picture>
         <div class="pool-hero-content wow fadeIn">
             <div class="breadcrumb-custom mb-3" style="color: var(--primary-color); letter-spacing: 3px; font-weight: 800; text-transform: uppercase;">A Fable of Water</div>
             <h1>The Private Pool</h1>
@@ -113,8 +121,14 @@
                         </div>
                         <div class="col-md-6">
                             <div class="pool-gallery wow fadeInRight">
-                                <img src="images/adventure-image-1.jpg" alt="Pool View 1">
-                                <img src="images/adventure-image-2.jpg" alt="Pool View 2">
+                                <picture>
+  <source srcset="images/adventure-image-1.webp" type="image/webp">
+  <img loading="lazy" src="images/adventure-image-1.jpg" alt="Pool View 1">
+</picture>
+                                <picture>
+  <source srcset="images/adventure-image-2.webp" type="image/webp">
+  <img loading="lazy" src="images/adventure-image-2.jpg" alt="Pool View 2">
+</picture>
                             </div>
                         </div>
                     </div>
@@ -136,9 +150,9 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
     <script>
         new WOW().init();
         $(window).on("scroll", function () {
