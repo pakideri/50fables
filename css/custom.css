@@ -5045,6 +5045,17 @@ header.main-header .header-sticky.active{
 	border-radius: 20px;
 }
 
+/* Lazy Load Gallery Images */
+.page-gallery-box .photo-gallery img.lazy-load{
+	opacity: 0;
+	transition: opacity 0.6s ease-in-out;
+	background: #e9e5e0;
+}
+
+.page-gallery-box .photo-gallery img.lazy-load.loaded{
+	opacity: 1;
+}
+
 /************************************/
 /*** 	32. Video Gallery css     ***/
 /************************************/
