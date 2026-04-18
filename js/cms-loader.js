@@ -26,8 +26,40 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 applyContent(data);
+                
+                // If it is the gallery page, wait for all images to completely load to show them all at once
+                if (page === 'gallery.html' || path.includes('/gallery')) {
+                    const galleryImages = document.querySelectorAll('.page-gallery img');
+                    let loadedCount = 0;
+                    const totalImages = galleryImages.length;
+                    
+                    if (totalImages === 0) {
+                        $(".preloader").fadeOut(600);
+                    } else {
+                        const checkAndHidePreloader = () => {
+                            loadedCount++;
+                            if (loadedCount >= totalImages) {
+                                $(".preloader").fadeOut(600);
+                            }
+                        };
+                        
+                        galleryImages.forEach(img => {
+                            if (img.complete) {
+                                checkAndHidePreloader();
+                            } else {
+                                img.addEventListener('load', checkAndHidePreloader);
+                                img.addEventListener('error', checkAndHidePreloader); // Hide preloader even if some images fail
+                            }
+                        });
+                    }
+                }
             })
-            .catch(error => console.error('Error loading CMS content:', error));
+            .catch(error => {
+                console.error('Error loading CMS content:', error);
+                if (page === 'gallery.html' || path.includes('/gallery')) {
+                    $(".preloader").fadeOut(600);
+                }
+            });
     }
 });
 

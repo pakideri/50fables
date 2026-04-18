@@ -13465,3 +13465,183 @@ header.main-header.header-prime .navbar{
         flex: 0 0 100%;
     }
 }
+
+/* --- Instagram Footer Feed (Dark Glassmorphism) --- */
+.dark-glass-ig {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-glass-ig::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.instagram-footer-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.instagram-footer-header h3 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.instagram-footer-header p {
+    color: #a0a0a0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ig-btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.ig-btn-view:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.ig-feed-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Glassmorphic Cards */
+.ig-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: block;
+    background: #2a2a2a;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ig-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease, filter 0.7s ease;
+    filter: brightness(0.9);
+}
+
+/* Hover Stats */
+.ig-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.ig-stats {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(15px);
+    transition: transform 0.4s ease;
+}
+
+.ig-stats span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ig-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    z-index: 5;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ig-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.ig-item:hover .ig-overlay {
+    opacity: 1;
+}
+
+.ig-item:hover .ig-stats {
+    transform: translateY(0);
+}
+
+/* Responsive Grid */
+@media (max-width: 1199px) {
+    .ig-feed-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ig-feed-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ig-feed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ig-type-indicator {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 4;
+    opacity: 0.9;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
