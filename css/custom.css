@@ -784,6 +784,7 @@ header.main-header .header-sticky.active{
     width: 100%;
 	padding: 0;
 	background: var(--accent-color);
+	z-index: 100000;
 }
 
 .slicknav_menu ul{
