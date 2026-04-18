@@ -6,9 +6,7 @@
 
     /* Preloader Effect */
     $window.on('load', function () {
-        if (!window.location.pathname.includes('gallery') && !window.location.pathname.includes('gallery.html')) {
-            $(".preloader").fadeOut(600);
-        }
+        $(".preloader").fadeOut(600);
     });
 
     /* Sticky Header */
